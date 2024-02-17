@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="..\static\css\index.css">
+  <title>Personal Portfolio Website</title>
+  <script src="https://kit.fontawesome.com/9fdeb0d673.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+      
+      <nav>
+        <div class="name">
+        
+        
+          <h1><span>P</span>eararulselvi <span>S</span>athiyamoorthy</h1>
+        </div>
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+        <div class="header-text">
+          <p>
+            Website Developer
+          </p>
+          <h1>Hi, I'm <span>Peararulselvi Sathiyamoorthi</span><br> from Thanjavur</h1>
+        </div>
+    </div>
+
+</div>
+<!-------about------>
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="..\static\images\background.jpg" width="100" height="400">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <P>I am Peararulselvi from Thanjavur.I have completed B.E computer science in Anjalai Ammal Mahalingam Engineering College. I want to become a website developer.</P>
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span> Web Development</span>,<br>Website development</li>
+          <li><span> Machine learning</span><br>Developing ML powered Website</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="experience">
+        <ul>
+          <li><span> 2022-Current</span>,<br>Blockchain Trainee</li>
+          <li><span> One month</span><br>Intership at LernTekin</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <ul>
+          <li><span>2019-2023</span>,<br>B.E(Computer Science) in AAAMEC</li>
+          <li><span>2018-2019</span><br>HSC-STATE BOARD<br> Best Matric School</li>
+          <li><span>2016-2017</span><br>SSLC-STATE BOARD<br> Indian Matric School</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--portfolio-->
+<div id="portfolio">
+  <div class="container">
+  <h1 class="sub-title">My Work</h1>
+  <div class="work-list">
+    <div class="work">
+      <img src="..\static\images\web1.jpg">
+      <div class="layer">
+        <h3>Road Accident Severity Prediction Website</h3>
+        <p>An ML powered web app which predicts accidents severity based on
+          the current conditions.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+      </div>
+    
+    <div class="work">
+      <img src="..\static\images\web2.jpg">
+      <div class="layer">
+        <h3>Hand Written Digits Recognition using machine learning</h3>
+        <p>An ML powered web app which predicts Hand Written Digits.</p>
+          <a href="https://github.com/Peararul/Road-accident-severity-prediction-using-machine-learning/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+    </div>
+    <div class="work">
+      <img src="..\static\images\web3.jpg">
+      <div class="layer">
+        <h3>Tech Documentation Website</h3>
+        <p>Tech documentation websites are online platforms or portals that provide technical documentation, guides, tutorials, and 
+          reference materials for various technologies,
+           frameworks, APIs, programming languages, software products, and hardware devices.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  </div>
+      
+    </div>
+  </div>
+  <a href="#" class="btn">See more</a>
+</div>
+</div>
+
+<!----contact----->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="work-list1">
+          <div class="work1">
+            
+        <p><img src="..\static\images\email.png"></i></p>
+      <p>contact@example.com</p></div>
+        <div class="work1">
+        <p><img src="..\static\images\phone.jpg"></p>
+        <div class="layer1"></div>
+      <p>1234567890</p></div>
+        <div class="work1">
+        <p><img src="..\static\images\home.png"></p>
+      <div class="layer1">
+        <p>12,3rd cross,abc nagar,Thanjavur</p></div></div>
+      </div>
+        <div class="socia-icons">
+          <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </div>
+       
+        <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tablink of tabcontents){
+      tablink.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab")
+  }
+</script>
+
+</body>
+</html>
